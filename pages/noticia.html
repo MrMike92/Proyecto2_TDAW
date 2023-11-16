@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Campus Connect</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/noticia.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/modal.css">
+    <script src="../js/modal.js" defer></script>
+    <script src="js/menu.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Campus Connect</h1>
+        <img src="../img/logo.png" alt="logo" id="logo">
+        <a href="login.html"><img src="../img/user.png" alt="user_sesion" width="50px" height="45px">Iniciar
+            sesión</a>
+    </header>
+
+    <nav>
+        <section>
+            <article class="menu_hamburguer" onclick="toggleNav()">
+                <img src="../img/assets/menu.svg">
+            </article>
+            <ul class="nav-list">
+                <li>
+                    <a href="../index.html">Incio</a>
+                </li>
+                <li class="dropdown">
+                    <a href="noticia.html">Noticias <img src="../img/assets/arrow.svg" class="arrow"></a>
+                    <ul class="submenu">
+                        <li><a href="evento.html">Eventos</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="tienda.html">Tienda</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </section>
+        <article class="search-bar">
+            <input class="search-input" type="text" placeholder="Término de búsqueda...">
+            <input type="submit" value="Buscar" class="search-button">
+        </article>
+    </nav>
+
+    <main>
+        <h2>Noticias.</h2>
+        <section>
+            <img src="../img/logo.png" alt="Noticia" class="img-noticia">
+            <article>
+                <h2>Titular de la Noticia 1</h2>
+                <p>Esta es una breve descripción de la noticia 1.</p>
+            </article>
+        </section>
+        <section>
+            <img src="../img/favicon.png" alt="Noticia" class="img-noticia">
+            <article>
+                <h2>Titular de la Noticia 2</h2>
+                <p>Esta es una breve descripción de la noticia 2.</p>
+            </article>
+        </section>
+        <section>
+            <img src="../img/facebook.png" alt="Noticia" class="img-noticia">
+            <article>
+                <h2>Titular de la Noticia 3</h2>
+                <p>Esta es una breve descripción de la noticia 3.</p>
+            </article>
+        </section>
+        <section>
+            <img src="../img/user.png" alt="Noticia" class="img-noticia">
+            <article>
+                <h2>Titular de la Noticia 4</h2>
+                <p>Esta es una breve descripción de la noticia 4.</p>
+            </article>
+        </section>
+        <section>
+            <img src="../img/logoUPIIT.jpg" alt="Noticia" class="img-noticia">
+            <article>
+                <h2>Titular de la Noticia 5</h2>
+                <p>Esta es una breve descripción de la noticia 5.</p>
+            </article>
+        </section>
+        <section>
+            <img src="../img/foto-Migue.jpg" alt="Noticia" class="img-noticia">
+            <article>
+                <h2>Titular de la Noticia 6</h2>
+                <p>Esta es una breve descripción de la noticia 6.</p>
+            </article>
+        </section>
+        <input type="submit" value="Ver más noticias" onclick="" id="load">
+    </main>
+
+    <!--Ventanas Modal-->
+
+    <dialog id="modal">
+        <button id="closeModal">&times;</button>
+        <article>
+            <h2 id="modalTitle">Titular de la Noticia</h2>
+            <img src="" alt="Noticia" id="modalImage">
+            <p id="modalDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Adipiscing elit pellentesque habitant morbi tristique
+                senectus et netus. Massa tincidunt nunc pulvinar sapien et. Ut tortor pretium viverra suspendisse
+                potenti nullam. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Nulla aliquet enim tortor
+                at auctor urna nunc id. Feugiat nibh sed pulvinar proin gravida hendrerit. Morbi tristique senectus et
+                netus et malesuada fames ac turpis. Velit euismod in pellentesque massa placerat duis ultricies lacus
+                sed. Tortor dignissim convallis aenean et tortor at risus viverra adipiscing. Est ante in nibh mauris
+                cursus mattis molestie. Dui accumsan sit amet nulla facilisi morbi tempus. Tortor at auctor urna nunc id
+                cursus metus aliquam eleifend. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Eros donec ac
+                odio tempor orci dapibus ultrices in. Amet luctus venenatis lectus magna. Lorem sed risus ultricies
+                tristique nulla aliquet enim. Sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui. Egestas maecenas pharetra
+                convallis posuere morbi leo. Maecenas ultricies mi eget mauris. Sit amet purus gravida quis blandit. A
+                diam maecenas sed enim ut sem viverra. Eget nunc lobortis mattis aliquam. Vel pharetra vel turpis nunc.
+                Urna duis convallis convallis tellus id interdum velit laoreet id. Dictumst vestibulum rhoncus est
+                pellentesque elit ullamcorper dignissim. Sit amet consectetur adipiscing elit ut aliquam. Commodo
+                viverra maecenas accumsan lacus. Ut tortor pretium viverra suspendisse potenti nullam ac. Felis bibendum
+                ut tristique et egestas quis ipsum. Hac habitasse platea dictumst vestibulum. Eget aliquet nibh praesent
+                tristique magna sit amet. Eu ultrices vitae auctor eu augue ut.</p>
+        </article>
+    </dialog>
+
+    <footer>
+        <p>Copyright &copy; 2023 | Campus Connect. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
+
+</body>
+
+</html>

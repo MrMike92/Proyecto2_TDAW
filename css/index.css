@@ -1,0 +1,88 @@
+.team {
+    display: flex;
+}
+
+.team-member {
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    transition: transform 0.3s;
+    box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.1);
+}
+
+main .team article img {
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+}
+
+.team-member:hover {
+    transform: scale(1.1);
+}
+
+.name-team {
+    margin: 0.2em 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.frase {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+@media screen and (min-width: 802px) {
+    .team {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .team-member {
+        text-align: center;
+        margin: 1em;
+        padding: 1em;
+        transition: transform 0.3s;
+        box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.1);
+    }
+    
+    main .team article img {
+        border-radius: 50%;
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 801px) and (min-width: 402px) {
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        text-align: center;
+        margin: 1em;
+        padding: 1em;
+        transition: transform 0.3s;
+        box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and (max-width: 401px) {
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        text-align: center;
+        margin: 1em;
+        padding: 1em;
+        transition: transform 0.3s;
+        box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.1);
+    }
+}

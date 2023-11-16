@@ -1,0 +1,101 @@
+#lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#carrito {
+    border: 1px solid #333;
+    padding: 10px;
+    width: 350px;
+}
+
+#productos-seleccionados {
+    list-style-type: none;
+    padding: 0;
+}
+
+#total {
+    font-weight: bold;
+}
+
+main section article img, main #carrito img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.producto-seleccionado {
+    margin-bottom: 15px;
+}
+
+#boton-limpiar,
+#boton-pagar {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    display: block;
+}
+
+#modal-pago {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1000;
+}
+
+#formulario-pago {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario-pago label {
+    margin-bottom: 10px;
+}
+
+#formulario-pago input {
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+#formulario-pago button {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#formulario-pago input:required:invalid {
+    border-color: #f00;
+}
+
+#boton-cerrar {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #ddd;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    display: block;
+}
+
+p {
+    padding: 10px;
+}

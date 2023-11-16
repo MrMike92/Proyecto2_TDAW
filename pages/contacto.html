@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Campus Connect</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <script src="../js/menu.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Campus Connect</h1>
+        <img src="../img/logo.png" alt="logo" id="logo">
+        <a href="login.html"><img src="../img/user.png" alt="user_sesion" width="50px" height="45px">Iniciar
+            sesión</a>
+    </header>
+
+    <nav>
+        <section>
+            <article class="menu_hamburguer" onclick="toggleNav()">
+                <img src="../img/assets/menu.svg">
+            </article>
+            <ul class="nav-list">
+                <li>
+                    <a href="../index.html">Incio</a>
+                </li>
+                <li class="dropdown">
+                    <a href="noticia.html">Noticias <img src="../img/assets/arrow.svg" class="arrow"></a>
+                    <ul class="submenu">
+                        <li><a href="evento.html">Eventos</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="tienda.html">Tienda</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </section>
+        <article class="search-bar">
+            <input class="search-input" type="text" placeholder="Término de búsqueda...">
+            <input type="submit" value="Buscar" class="search-button">
+        </article>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Contacto.</h2>
+            <article>
+                <h3>Información recuperada de las siguentes fuentes.</h3>
+                <a href="https://www.facebook.com/profile.php?id=100075559917119" target="_blank"><img class="redes"
+                        src="../img/facebook.png" alt="facebook" title="Facebook"></a>
+                <a class="redes" href="https://twitter.com/UPIIT_IPN"><img class="redes" src="../img/twitter.png"
+                        alt="Twitter" title="Twitter"></a>
+                <a class="redes" href="https://www.instagram.com/upiit_ipn/"><img class="redes"
+                        src="../img/instagram.png" alt="Instagram" title="Instagram"></a>
+                <a href="https://www.upiit.ipn.mx"><img src="../img/logoUPIIT.jpg" /></a>
+                <a href="https://www.ipn.mx/radio/"><img src="../img/radio-ipn.png" /></a>
+            </article>
+        </section>
+        <section id="email">
+            <p>Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros a través de nuestro
+                correo electrónico: info@creeme.com</p>
+            <form action="" method="get">
+                <p>Email: <input class="email-input" type="email" name="email" placeholder="Ingrese su email"
+                        required /></p>
+                <p><input type="checkbox" name="condiciones" checked /> Deseo recibir informacion sobre novedades y
+                    ofertas.</p>
+                <p><input type="checkbox" name="condiciones" /> Declaro haber leido y aceptar las condiciones generales
+                    del programa y la normativa sobre la proteccion de datos.</p>
+                <input class="boton" type="submit" value="Enviar" />
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023 | Campus Connect. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
+
+</body>
+
+</html>

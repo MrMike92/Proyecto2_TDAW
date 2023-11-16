@@ -1,0 +1,36 @@
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    transform: translate(-12%, -50%);
+    padding: 2rem;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    z-index: 1000;
+}
+
+#modalImage {
+    max-width: 50%;
+    height: auto;
+}
+
+#modalTitle {
+    font-size: 2rem;
+}
+
+#modalDescription {
+    text-align: justify;
+}
+
+#closeModal {
+    background-color: #6C1D45;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#closeModal:hover {
+    background-color: black;
+}

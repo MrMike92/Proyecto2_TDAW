@@ -1,0 +1,59 @@
+main #email{
+    border: black solid 0.1em;
+    margin: 1em;
+    padding: 1em 1em;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1em;
+}
+
+#email p{
+    padding: 10px;
+}
+
+main .boton{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.5em 0.8em;
+    border-radius: 0.5em;
+    transition: .3s ease-out all;
+}
+
+main .boton:hover{
+    background-color: white;
+    color: black;
+    border: black solid 0.2em;
+    border-radius: 0.5em;
+	margin-top: 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+main .email-input {
+    padding: 3px;
+    border: black solid 1px;
+    border-radius: 0.2em;
+}
+
+main section img {
+    display: inline-block;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    width: 40em;
+}
+
+main article img{
+    width: 15em;
+    height: auto;
+    padding: 1em;
+    transition: .3s ease-out all;
+}
+
+main article .redes{
+    width: auto;
+}
+
+main article img:hover{
+    margin-bottom: 10px;
+}

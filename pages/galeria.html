@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Campus Connect</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <script src="../js/carrusel.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Campus Connect</h1>
+        <img src="../img/logo.png" alt="logo" id="logo">
+        <a href="login.html"><img src="../img/user.png" alt="user_sesion" width="50px" height="45px">Iniciar
+            sesión</a>
+    </header>
+
+    <nav>
+        <section>
+            <article class="menu_hamburguer" onclick="toggleNav()">
+                <img src="../img/assets/menu.svg">
+            </article>
+            <ul class="nav-list">
+                <li>
+                    <a href="../index.html">Incio</a>
+                </li>
+                <li class="dropdown">
+                    <a href="noticia.html">Noticias <img src="../img/assets/arrow.svg" class="arrow"></a>
+                    <ul class="submenu">
+                        <li><a href="evento.html">Eventos</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="tienda.html">Tienda</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </section>
+        <article class="search-bar">
+            <input class="search-input" type="text" placeholder="Término de búsqueda...">
+            <input type="submit" value="Buscar" class="search-button">
+        </article>
+    </nav>
+
+    <main>
+        <div class="container-carousel">
+            <div class="carruseles" id="slider">
+                <section class="slider-section">
+                    <img src="../img/galeria/1.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../img/galeria/2.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../img/galeria/3.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../img/galeria/4.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../img/galeria/5.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../img/galeria/6.avif">
+                </section>
+                <section class="slider-section">
+                    <img src="../img/galeria/7.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../img/galeria/8.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../img/galeria/9.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../img/galeria/10.jpg">
+                </section>
+            </div>
+            <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+            <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Copyright &copy; 2023 | Campus Connect. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
+
+</body>
+
+</html>

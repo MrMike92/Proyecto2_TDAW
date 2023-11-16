@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Campus Connect</title>
+    <link rel="stylesheet" href="../css/tienda.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <script src="../js/carro.js" defer></script>
+    <script src="js/menu.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Campus Connect</h1>
+        <img src="../img/logo.png" alt="logo" id="logo">
+        <a href="login.html"><img src="../img/user.png" alt="user_sesion" width="50px" height="45px">Iniciar
+            sesión</a>
+    </header>
+
+    <nav>
+        <section>
+            <article class="menu_hamburguer" onclick="toggleNav()">
+                <img src="../img/assets/menu.svg">
+            </article>
+            <ul class="nav-list">
+                <li>
+                    <a href="../index.html">Incio</a>
+                </li>
+                <li class="dropdown">
+                    <a href="noticia.html">Noticias <img src="../img/assets/arrow.svg" class="arrow"></a>
+                    <ul class="submenu">
+                        <li><a href="evento.html">Eventos</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="tienda.html">Tienda</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </section>
+        <article class="search-bar">
+            <input class="search-input" type="text" placeholder="Término de búsqueda...">
+            <input type="submit" value="Buscar" class="search-button">
+        </article>
+    </nav>
+
+    <main>
+        <section id="lista-productos">
+            <article class="producto">
+                <input type="checkbox" class="checkbox-producto" data-nombre="" data-precio="">
+                <img src="../img/carro/hoodie.jpg" alt="sudadera">
+                <p class="nombre-producto">Sudadera IPN</p>
+                <p class="descripcion-producto">Sudadera con diseño del IPN, disponible en chico,mediano,grande</p>
+                <p class="precio-producto">$2000.00</p>
+            </article>
+        
+            <article class="producto">
+                <input type="checkbox" class="checkbox-producto" data-nombre="" data-precio="">
+                <img src="../img/carro/llavero.jpg" alt="llavero">
+                <p class="nombre-producto">Llavero IPN</p>
+                <p class="descripcion-producto">Llavero metalico con diseño del IPN.</p>
+                <p class="precio-producto">$30.00</p>
+            </article>
+    
+            <article class="producto">
+                <input type="checkbox" class="checkbox-producto" data-nombre="" data-precio="">
+                <img src="../img/carro/playera.png" alt="playera">
+                <p class="nombre-producto">Playera IPN</p>
+                <p class="descripcion-producto">Playera con diseño del IPN, disponible en chico,mediano,grande</p>
+                <p class="precio-producto">$300.00</p>
+            </article>
+    
+            <article class="producto">
+                <input type="checkbox" class="checkbox-producto" data-nombre="" data-precio="">
+                <img src="../img/carro/gorra.jpg" alt="gorra">
+                <p class="nombre-producto">Gorra IPN</p>
+                <p class="descripcion-producto">Gorra con diseño del IPN</p>
+                <p class="precio-producto">$300.00</p>
+            </article>
+    
+            <article class="producto">
+                <input type="checkbox" class="checkbox-producto" data-nombre="" data-precio="">
+                <img src="../img/carro/aaa.png" alt="playera">
+                <p class="nombre-producto">Donacion a los autores</p>
+                <p class="descripcion-producto">Para apoyar a la pagina y que siga funcionando</p>
+                <p class="precio-producto">$50.00</p>
+            </article>
+    
+            <article class="producto">
+                <input type="checkbox" class="checkbox-producto" data-nombre="" data-precio="">
+                <img src="../img/carro/aaa.png" alt="playera">
+                <p class="nombre-producto">Publicar anuncios en la pagina</p>
+                <p class="descripcion-producto">Renta de un espacio en la pagina para la publicacion de anuncios publicitarios</p>
+                <p class="precio-producto">$500.00</p>
+            </article>
+        </section>
+        
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="productos-seleccionados"></ul>
+            <p id="total">Total: $0.00</p>
+            <button id="boton-limpiar">Limpiar Selección</button>
+            <button id="boton-pagar">Pagar</button>
+        </section>
+        
+        <section id="modal-pago">
+            <h2>Información de Pago</h2>
+            <form id="formulario-pago">
+                <label for="numero-tarjeta">Número de Tarjeta:</label>
+                <input type="text" id="numero-tarjeta" placeholder="1234 5678 9012 3456" required>
+        
+                <label for="fecha-expiracion">Fecha de Expiración:</label>
+                <input type="text" id="fecha-expiracion" placeholder="MM/AA" required>
+        
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" placeholder="123" required>
+        
+                <button type="button" onclick="enviarPago()">Enviar Pago</button>
+                <button type="button" id="boton-cerrar" onclick="cerrarModal()">Cerrar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Copyright &copy; 2023 | Campus Connect. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
+
+</body>
+
+</html>
